@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Here</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Bhaijaan+2:wght@800&display=swap" rel="stylesheet">
+</head>
+<style>
+    .header{
+        /* position: sticky;
+        top :20px; */
+    }
+    body {
+        margin: 0px;
+        padding: 0px;
+       background: url('img/abs-1850926_640.jpg');
+        background-size: cover;
+        font-family: "Baloo Bhaijaan 2", sans-serif;
+       
+        /* height: 4000px; */
+      background-repeat: no-repeat;
+    }
+      .left img{
+        
+      
+        
+        height: 25px;
+        width:25px;
+        filter: invert();
+        
+      }
+      .name{
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        line-height: 26px;
+       
+       
+      }
+    
+    .left{
+        display :inline-block;
+         /* border:2px solid rgb(244, 8, 8); */
+         position:absolute;
+         left:34px;
+         top: 20px;
+         text-align: center;
+         
+         
+
+         
+
+
+    }
+    .right{
+        display: inline-block;
+         /* border:2px solid white; */
+        position:absolute;
+           right :40px;
+        top :20px}
+
+    .mid{
+        display:block;
+        /* border:2px solid white; */
+        width:33%;
+        margin :20px auto;
+    
+        
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 18px;
+        
+    }
+    .navbar li a{
+        text-decoration: none;
+       
+        color: white;
+        
+        padding: 17px;
+        margin:13px;
+    }
+
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color:gray;
+    }
+
+    .btn{
+
+        margin:7px;
+        padding:10px 27px;
+        /* border:2px solid black; */
+        border-radius:15px;
+        font-family: "Baloo Bhaijaan 2", sans-serif;
+        font-size: 15px;
+      
+        
+        
+    }
+    .btn:hover{
+        background-color:gray;
+    }
+
+    .container{
+      /* border: 2px solid white; */
+      width:33%;
+      margin :20px ;
+      text-align: center;
+      padding: 20px;
+      /* background-color: rgba(40, 40, 40, 0.5); */
+     
+      
+     
+    }
+    .container h2{
+      color: aliceblue;
+    }
+     
+    .form-group input{
+      border: 2px solid black;
+    border-radius: 10px;
+    width: 53%;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    margin: 3px;
+    padding: 16px;
+    font-size: 11px;
+
+
+
+    }
+</style>
+
+
+<body>
+    <div class="header">
+      <div class="left">
+        <img src="img/silhouette-5010366_1280.webp" alt="">
+        <div class="name">Fitness Here</div>
+    </div>
+    <div class="mid">
+      <ul class="navbar">
+        <li ><a class="active" href="#">Home</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </div>
+    <div class="right">
+         <button class="btn">Signup</button>
+         <button class="btn">Login</button>
+    </div>
+</div>
+
+<div class="container">
+       <h2> Hurry! Join Now</h2>
+
+       <form action="no-action.php" class="form-group">
+            
+        <input type="Name" placeholder="Enter Your Name">
+        <input type="Email" placeholder="Enter Your Email">
+        <input type="number" placeholder="Enter Ur number">
+        <input type="location" placeholder="Enter Your Location">
+         </form>
+
+         <button class="btn">Submit</button>
+
+
+
+
+
+
+</div>
+    
+</body>
+</html>
