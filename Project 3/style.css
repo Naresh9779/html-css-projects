@@ -145,8 +145,8 @@ p{
     margin-right: 8rem;
 }
 .image{
-    width:20;
-    opacity: 0.9;
+    /* width:20;
+    opacity: 0.9; */
     border-radius: 6rem;
 }
 .problems-solved{
@@ -441,7 +441,7 @@ footer {
    .image
    {
     width: 120vh;
-    height:100vh;
+    height:50vh;
    }
 }
 
@@ -461,8 +461,14 @@ footer {
     .logo {
         font-size: 1.5rem;
     }
+    .right-hero{
+        margin-right: 4rem;
+        margin-left: 0;
+    }
     .image{
-       width :60vw;
+       width :50vw;
+       height:93vh;
+      
     }
     .talk-btn {
         padding: 0.8rem 1rem;
@@ -614,14 +620,16 @@ footer {
         font-size: 5rem;
      }
      .right-hero{
-        margin-left:5rem;
+        margin-left:2rem;
         margin-top: 1rem;
-        width:100%
+       margin-right: 2rem;
        
        
      }
       .image{
         width: 90vw;
+        /* height: 20vh; */
+
         
  
   /* height: 30vh; */
@@ -679,11 +687,12 @@ footer {
 @media (max-width:430px)
 {
   .problems-solved{
+    margin-top: 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .primary-heading{
+  .problem-heading{
     text-align: center;
   }
     .key-metrics{
