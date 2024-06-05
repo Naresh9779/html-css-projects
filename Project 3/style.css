@@ -134,6 +134,7 @@ p{
     font-size: 1.4rem;
     font-weight: bold;
     color: aliceblue;
+    text-align: center; 
 }
 .start-btn:hover{
     background:linear-gradient(128deg,rgb(75, 123, 252),rgb(221, 89, 89));
@@ -375,6 +376,30 @@ footer {
 .social-icon:hover {
     color: #ffeb3b;
 }
+.active .navbar ,.active .extra {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    /* display: flex; */
+    transform: translateX(0);
+}
+
+
+.active .mobile-nav-bar-btn .mobile-nav-icon[name="close"]{
+    display: block;
+
+
+ 
+ 
+   
+}
+.active .mobile-nav-bar-btn .mobile-nav-icon[name="menu"]{
+    display: none;
+
+ 
+ 
+   
+}
 
 /* Media Queries for Responsive Design */
 @media (max-width: 1270px) {
@@ -387,18 +412,24 @@ footer {
         gap: 2rem;
         flex-wrap: wrap;
     }
+    .start-btn{
+        width:100%;
+        font-size: 1rem;
+    }
    
     .grid {
-        flex-direction: column;
+        font-size: 1.6rem;
+        /* flex-wrap: wrap; */
         gap: 4rem;
+        margin-top: 4rem;
     }
     /* .left-hero {
         margin-left: 0;
     } */
 
     .start-btn{
-        width:33%;
-        text-align: center;
+        width:40%;
+        /**/
 
     }
     .extra{
@@ -406,36 +437,40 @@ footer {
     }
     .right-hero {
        margin-left:20rem ;
+       margin-top: 10rem;
     }
-    .image{
-        width:100%;
-         height: 50%;
-    }
+   
     .metrics {
-        flex-direction: column;
-        gap: 2rem;
+        /* flex-direction: column; */
+       
     }
     .key-metrics h2 {
         font-size: 2.5rem;
     }
     .problems {
    
-        gap: 1.5rem;
+     gap:5rem
+    }
+    .problem-heading{
+        font-size: 3rem;
     }
     .problem {
-        width: 100%;
-    }
-    .image{
+        height: 25rem;
+        width:30rem ;
        
     }
+    .problem p{
+        font-size: 1.6rem;
+    }
+   .image
+   {
+    width: 120vh;
+    height:100vh;
+   }
 }
 
-@media (max-width: 1030px) {
-    .review-cards{
-        gap: 1rem;
-    }
-}
-@media (max-width: 934px) {
+
+@media (max-width: 1080px) {
     .header {
         padding: 1rem;
     }
@@ -499,7 +534,7 @@ footer {
         padding: 0.8rem 1rem;
     }
 }
-@media(max-width:932px)
+@media(max-width:1080px)
 {
 
     .mobile-nav-bar-btn{
@@ -535,7 +570,7 @@ footer {
     transition:all 0.2s linear ;
   
    opacity: 0;
-   visibility: hidden;
+   display: none;
     pointer-events:none;
    }
   
@@ -546,6 +581,7 @@ footer {
     visibility: visible;
     pointer-events: auto;
     transform: translateX(0);
+    display: block;
 }
 
 .active .mobile-nav-bar-btn .mobile-nav-icon[name="close"]{
@@ -563,12 +599,14 @@ footer {
    
 }
 .image{
-    width:60%;
+    margin:0rem;
+    height: 90vh;
+    width: 90vh;
 }
 }
    
 
-@media (max-width: 600px) {
+@media  (max-width: 980px) {
     .header {
         padding: 0.5rem;
     }
@@ -579,16 +617,35 @@ footer {
     .logo {
         font-size: 1.2rem;
     }
-    .navbar-list {
-        gap: 1rem;
+    .grid{
+        display: flex;
+        flex-direction: column;
     }
-    .talk-btn {
-        padding: 0.5rem 0.8rem;
-        font-size: 1.2rem;
-    }
-    .extra-list {
-        gap: 1rem;
-    }
+     .left-hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left:2rem;
+     }
+     .left-hero h1{
+        font-size: 5rem;
+     }
+     .right-hero{
+        margin-left:5rem;
+        margin-top: 1rem;
+        width:100%
+       
+       
+     }
+      .image{
+        width: 100vh;
+ 
+  height: 30vh;
+        /* display: none; */
+      }
+
+   
     .problems {
         gap: 1rem;
     }
@@ -634,7 +691,55 @@ footer {
         padding: 0.5rem 0.8rem;
         font-size: 1rem;
     }
+   
+}
+@media (max-width:430px)
+{
+    .right-hero{
+        margin-left:2rem;
+        margin-right: 2rem;
+    }
     .image{
-        width:60%;
+        width:90%;
+        
+    }
+
+    .key-metrics{
+        display: flex;
+        align-items: center;
+    }
+    .metric{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .metric p{
+        text-align: center;
+    }
+
+    .review-cards{
+        display: flex;
+        flex-direction: row;
+       
+       
+        gap: 1rem;
+    }
+    .review{
+        /* font-size: smaller; */
+        height: 10rem;
+        width: 10rem;
+    }
+    .review p{
+        font-size: 1rem;
+    }
+    .cta{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cta h2{
+        font-size: 2.5rem;
     }
 }
